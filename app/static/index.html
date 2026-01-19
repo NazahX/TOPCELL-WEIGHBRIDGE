@@ -38,7 +38,7 @@
                         <p class="eyebrow">Step 1</p>
                         <h3>Weigh in (gross)</h3>
                     </div>
-                    <form id="weighin-form" class="form-grid">
+                    <form id="weighin-form" class="form-grid scrollable">
                         <label>Vehicle plate<input name="vehicle_plate" required placeholder="ABC-1234"></label>
                         <label>Direction<select name="direction" required>
                             <option value="">Select</option>
@@ -67,7 +67,7 @@
                             <button id="disconnect-serial" class="ghost small danger">Disconnect</button>
                         </div>
                     </div>
-                    <form id="serial-form" class="stacked">
+                    <form id="serial-form" class="stacked scrollable">
                         <label>Port<input name="port" placeholder="COM3" required></label>
                         <label>Baud rate<input name="baudrate" type="number" value="9600" required></label>
                         <label>Data bits<input name="bytesize" type="number" value="8" required></label>
@@ -89,7 +89,7 @@
                         <p class="eyebrow">Step 2</p>
                         <h3>Weigh out (tare)</h3>
                     </div>
-                    <form id="weighout-form" class="stacked">
+                    <form id="weighout-form" class="stacked scrollable">
                         <label>Ticket ID<input name="ticket_id" type="number" required></label>
                         <label>Override tare (kg)<input name="tare_kg" type="number" step="0.01" placeholder="Leave blank to use live"></label>
                         <button type="submit" class="primary">Capture tare</button>
@@ -101,7 +101,7 @@
                         <p class="eyebrow">Step 3</p>
                         <h3>Finalize</h3>
                     </div>
-                    <form id="finalize-form" class="stacked">
+                    <form id="finalize-form" class="stacked scrollable">
                         <label>Ticket ID<input name="ticket_id" type="number" required></label>
                         <label>QC status<select name="qc_status">
                             <option value="">Keep pending</option>
