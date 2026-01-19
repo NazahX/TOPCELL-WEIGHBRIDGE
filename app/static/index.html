@@ -56,6 +56,24 @@
                         <button type="submit" class="primary">Capture gross</button>
                     </form>
                 </section>
+
+                <section class="panel slim">
+                    <div class="panel-head">
+                        <p class="eyebrow">Step 3</p>
+                        <h3>Finalize</h3>
+                    </div>
+                    <form id="finalize-form" class="stacked">
+                        <label>Ticket ID<input name="ticket_id" type="number" required></label>
+                        <label>QC status<select name="qc_status">
+                            <option value="">Keep pending</option>
+                            <option value="pass">Pass</option>
+                            <option value="fail">Fail</option>
+                        </select></label>
+                        <label>QC note<textarea name="qc_note" rows="2" placeholder="Optional QC note"></textarea></label>
+                        <label>Remarks<textarea name="remarks" rows="2" placeholder="Optional note"></textarea></label>
+                        <button type="submit" class="primary">Finalize ticket</button>
+                    </form>
+                </section>
             </div>
 
             <div class="column side-col">
@@ -84,7 +102,7 @@
                     </form>
                 </section>
 
-                <section class="panel slim">
+                <section class="panel slim tall">
                     <div class="panel-head">
                         <p class="eyebrow">Step 2</p>
                         <h3>Weigh out (tare)</h3>
@@ -93,24 +111,6 @@
                         <label>Ticket ID<input name="ticket_id" type="number" required></label>
                         <label>Override tare (kg)<input name="tare_kg" type="number" step="0.01" placeholder="Leave blank to use live"></label>
                         <button type="submit" class="primary">Capture tare</button>
-                    </form>
-                </section>
-
-                <section class="panel slim">
-                    <div class="panel-head">
-                        <p class="eyebrow">Step 3</p>
-                        <h3>Finalize</h3>
-                    </div>
-                    <form id="finalize-form" class="stacked">
-                        <label>Ticket ID<input name="ticket_id" type="number" required></label>
-                        <label>QC status<select name="qc_status">
-                            <option value="">Keep pending</option>
-                            <option value="pass">Pass</option>
-                            <option value="fail">Fail</option>
-                        </select></label>
-                        <label>QC note<textarea name="qc_note" rows="2" placeholder="Optional QC note"></textarea></label>
-                        <label>Remarks<textarea name="remarks" rows="2" placeholder="Optional note"></textarea></label>
-                        <button type="submit" class="primary">Finalize ticket</button>
                     </form>
                 </section>
             </div>

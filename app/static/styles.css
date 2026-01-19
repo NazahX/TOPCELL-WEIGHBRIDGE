@@ -79,7 +79,7 @@ h3 { font-size: 17px; }
 .workspace {
     flex: 1;
     display: grid;
-    grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
     gap: 10px;
     min-height: 0;
     align-items: start;
@@ -100,6 +100,7 @@ h3 { font-size: 17px; }
 }
 
 .main-col, .side-col { min-height: 0; }
+.side-col .tall { flex: 1; min-height: 0; }
 .main-col > .panel,
 .side-col > .panel { min-height: 0; }
 
@@ -109,12 +110,12 @@ h3 { font-size: 17px; }
 
 .form-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 6px;
     margin-top: 4px;
 }
 
-.stacked { display: flex; flex-direction: column; gap: 6px; margin-top: 4px; }
+.stacked { display: flex; flex-direction: column; gap: 5px; margin-top: 4px; }
 
 label {
     display: flex;
@@ -130,7 +131,7 @@ label {
 }
 
 input, select, textarea {
-    padding: 8px 9px;
+    padding: 8px 8px;
     border-radius: 8px;
     border: 1px solid var(--stroke);
     background: #fff;
