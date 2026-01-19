@@ -21,7 +21,7 @@ body {
 .shell {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 12px 14px 16px;
+    padding: 10px 12px 14px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -79,7 +79,7 @@ h3 { font-size: 17px; }
 .workspace {
     flex: 1;
     display: grid;
-    grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
     gap: 10px;
     min-height: 0;
 }
@@ -106,12 +106,12 @@ h3 { font-size: 17px; }
 
 .form-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 8px;
-    margin-top: 6px;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 6px;
+    margin-top: 4px;
 }
 
-.stacked { display: flex; flex-direction: column; gap: 8px; margin-top: 6px; }
+.stacked { display: flex; flex-direction: column; gap: 6px; margin-top: 4px; }
 
 label {
     display: flex;
@@ -121,8 +121,13 @@ label {
     font-size: 13px;
 }
 
+.main-col section.panel,
+.side-col section.panel {
+    flex: 0 0 auto;
+}
+
 input, select, textarea {
-    padding: 9px 10px;
+    padding: 8px 9px;
     border-radius: 8px;
     border: 1px solid var(--stroke);
     background: #fff;
@@ -134,19 +139,13 @@ textarea { resize: vertical; }
 .checkbox { flex-direction: row; align-items: center; }
 .checkbox input { width: auto; margin-right: 8px; }
 
-.scrollable {
-    flex: 1;
-    min-height: 0;
-    overflow: auto;
-}
-
 .primary, .ghost {
     cursor: pointer;
     border: 1px solid var(--ink);
     border-radius: 9px;
-    padding: 9px 11px;
+    padding: 8px 10px;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 12.5px;
     transition: transform 80ms ease, box-shadow 80ms ease;
 }
 .primary {
